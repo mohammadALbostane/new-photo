@@ -13,7 +13,6 @@ import java.nio.file.Paths;
 @Service
 public class FileStorageService {
     private final Path rootLocation = Paths.get("/app/uploads");
-
     public FileStorageService() {
         try {
             Files.createDirectories(rootLocation);
